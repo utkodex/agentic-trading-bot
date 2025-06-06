@@ -2,13 +2,13 @@ import logging
 import os
 from datetime import datetime
 
+# Create 'logs/' directory if it doesn't exist
+LOG_DIR = os.path.join(os.getcwd(), "logs")
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# Create unique log file name
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
-
-logs_path = os.path.join(os.getcwd(), "logs", LOG_FILE)
-
-os.makedirs(logs_path, exist_ok=True)
-
-LOG_FILE_PATH = os.path.join(logs_path, LOG_FILE)
+LOG_FILE_PATH = os.path.join(LOG_DIR, LOG_FILE)
 
 # Logging configuration
 logging.basicConfig(
@@ -17,4 +17,4 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-logger=logging.getLogger("my_agentic_app")
+logger = logging.getLogger("my_agentic_app")
