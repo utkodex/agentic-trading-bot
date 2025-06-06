@@ -17,3 +17,4 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
+logger=logging.getLogger("my_agentic_app")
