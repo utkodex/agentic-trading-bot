@@ -1,7 +1,5 @@
 import streamlit as st
 import requests
-from exception.exceptions import TradingBotException
-import sys
 
 BASE_URL = "http://localhost:8000"  # Backend endpoint
 
@@ -34,7 +32,6 @@ with st.sidebar:
 
 # Display chat history
 st.header("Ask a Question")
-
 st.markdown("Enter your **stock-market related** question. The chatbot will search will search the documents and respond intelligently.")
 
 question = st.text_input("Your Question", placeholder="e.g. What are the financials of Apple Inc?")
