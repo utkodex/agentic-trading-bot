@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BASE_URL = "http://localhost:8000"  # Backend endpoint
+BASE_URL = "http://localhost:8001"  # Backend endpoint
 
 st.set_page_config(
     page_title="📈 Stock Market Agentic Chatbot",

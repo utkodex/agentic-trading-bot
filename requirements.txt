@@ -9,5 +9,6 @@ fastapi[all]
 uvicorn
 pinecone
 langchain_pinecone
+langchain_groq
 
 -e .
