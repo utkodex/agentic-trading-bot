@@ -52,6 +52,10 @@ source activate ./env
 
 ![Alt Text](images/chatbot.jpeg)
 
-### You can upload files in side bar in the left
+#### You can upload files in side bar in the left
 
 ![Alt Text](images/sidebar_with_fileuploaded.jpeg)
+
+#### Press on Upload and Ingest to create the embeddings
+
+![Alt Text](images/create_embeddings.jpeg)
