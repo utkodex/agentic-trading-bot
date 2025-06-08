@@ -59,3 +59,27 @@ source activate ./env
 #### Press on Upload and Ingest to create the embeddings
 
 ![Alt Text](images/create_embeddings.jpeg)
+
+#### This is the process in backend
+
+![Alt Text](images/backend_ending_process.jpeg)
+
+#### File uploaded
+
+![Alt Text](images/file_uploaded.jpeg)
+
+#### Chating with chatbot
+
+![Alt Text](images/chating_with_chatbot.jpeg)
+
+![Alt Text](images/chat.jpeg)
+
+#### Backend process while chating
+
+![Alt Text](images/chat_backend.jpeg)
+
+#### Example that chat-bot providing document accurate answers
+
+![Alt Text](images/document_page.jpeg)
+
+![Alt Text](images/accurate_answer.jpeg)
