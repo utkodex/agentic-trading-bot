@@ -1,3 +1,7 @@
+# **AGENTIC TRADING BOT**
+
+![Alt Text](images/chatbot.jpeg)
+
 ### keys needs to be mention inside the .env
 ```
 POLYGON_API_KEY
@@ -10,13 +14,11 @@ PINECONE_API_KEY
 ### for running the fastapi endpoint
 ```
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-
 ```
 
 ### for running the streamlit ui
 ```
 streamlit run streamlit_ui.py
-
 ```
 
 ### for installing the requirements
@@ -45,3 +47,11 @@ source activate ./env
 3. if possible run the langgraph workflow in ipynb and test the real time data fetching tool
 4. deploy it
 5. sit on it either thu or friday
+
+## **This is the Stock Market Agentic Chatbot**
+
+![Alt Text](images/chatbot.jpeg)
+
+### You can upload files in side bar in the left
+
+![Alt Text](images/sidebar_with_fileuploaded.jpeg)
