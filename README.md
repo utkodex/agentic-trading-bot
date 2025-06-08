@@ -6,6 +6,15 @@ The Stock Market Agentic Chatbot is an advanced tool designed to provide users w
 
 ![Alt Text](images/chatbot.jpeg)
 
+## Table of Contents
+
+* [Overview](#overview)
+* [Key Features](#key-features)
+* [Prerequisites](#prerequisites)
+* [How It Works](#how-it-works)
+* [Demo](#demo)
+* [Usage](#usage)
+
 ## Key Features
 
 1. **Real-Time Stock Market Data**
@@ -84,7 +93,7 @@ source activate ./env
 
 ---
 
-## **This is the Stock Market Agentic Chatbot**
+## **Demo**
 
 ![Alt Text](images/chatbot.jpeg)
 
