@@ -10,12 +10,15 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin=["*"],
+    allow_origins=["*"],  # set specific origins in prod
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+import logging
+
+logging.basicConfig(level=logging.ERROR)
 @app.post("/upload")
 async def upload_files(files: List[UploadFile] = File(...)):
     try:
@@ -23,8 +26,11 @@ async def upload_files(files: List[UploadFile] = File(...)):
         ingestion.run_pipeline(files)
         return {"message": "Files successfully processed and stored."}
     except Exception as e:
+        # return JSONResponse(status_code=500, content={"error": str(e)})
+        logging.error("Error in upload_files endpoint:", exc_info=True)
         return JSONResponse(status_code=500, content={"error": str(e)})
     
+
 @app.post("/query")
 async def query_chatbot(request: QuestionRequest):
     try:
